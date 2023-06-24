@@ -4,18 +4,249 @@
     margin: 0;
 }
 
-body {
-    background-color: white;
+:root {
+    --brown: #5B3D00;
+    --tan: #D7C193;
+    --white: white;
+    --gray: #566060;
 }
 
-.header {
-    padding: 20px;
-    font-family: 'Calibri';
-    background-color: black;
-    color: aqua;
+body {
+    background-color: var(--white);
+}
+
+header {
+    padding: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: var(--white);
+    color: var(--brown);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header h1 {
+    font-size: 70px;
+    /* color: #566060; */
+    /* border-radius: 10px solid #28C6C2; */
+}
+
+.header nav {
+    /* padding-top: 15px; */
+    /* margin-left: 40px; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color: var(--tan);
+}
+
+.header nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 25px;
+}
+
+a {
+    /* color: #28C6C2; */
+    color: var(--tan);
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration-color: var(--brown);
+}
+
+.hero {
+    height: 700px;
+    /* background-color: #566060; */
+    background-image: url("./hero2.jpg");
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h2 {
+    font-size: 20px;
+    position: relative;
+    bottom: 20px;
+    right: 45px;
+}
+
+/* .card-subheading { */
+    /* width: 75%; */
+    /* display: inline-block; */
+    /* margin-right: 20px; */
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    /* font-size: 45px; */
+    /* background-color: var(--blue); */
+    /* color: #566060; */
+/* } */
+
+/* .content { */
+    /* width: 75%; */
+    /* display: inline-block; */
+    /* margin-left: 20px; */
+/* } */
+
+.about-me h3 {
+    margin-left: 20px;
+    padding: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: var(--brown);
+    font-size: 40px;
+    /* align-items: center; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-me p {
+    margin-left: 20px;
+    padding: 10px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    /* background-color: white; */
+    color: var(--brown);
+    /* border-top: 2px solid var(--brown); */
+    /* border-bottom: 2px solid var(--brown); */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-photo {
+    width: 200px;
+    height: 200px;
+    border: 5px solid var(--brown);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* img { */
+    /* border: 5px solid var(--blue); */
+/* } */
+.work h3 {
+    margin-left: 20px;
+    padding: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: var(--brown);
+    font-size: 40px;
+    /* border-right: 2px solid var(--brown); */
+}
+
+.work {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.image-parent {
+    padding: 20px;
+    position: relative;
+    /* padding: 20px; */
+}
+
+.image-title {
+    position: absolute;
+    left: 30px;
+    bottom: 45px;
+    padding: 5px;
+    background-color: var(--brown);
+    border: 5px solid var(--tan);
+    font-size: 20px;
+
+}
+
+.small-projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.small-projects p {
+    position: relative;
+    left: 20px;
+    bottom: 35px;
+    padding: 5px;
+    background-color: var(--brown);
+    /* border: 5px solid var(--tan); */
+    font-size: 15px;
+    color: var(--tan);
+}
+
+.horiseon-refactor img {
+    display: flex;
+    margin: 10px auto;
+    max-width: 600px;
+    background-image: url(https://lonj214.github.io/horiseon-refactor/);
+}
+/*  */
+/* .card-2, .card-3, .card-4, .card-5 { */
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* flex-wrap: wrap; */
+/* } */
+/*  */
+footer {
+    padding-top: 20px;
+    margin-left: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color: var(--brown);
+    /* border-left: 5px solid #234489; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer ul li {
     display: inline-block;
+    margin-left: 25px;
+    text-decoration: underline;
+    text-decoration-color: var(--brown);
+}
+
+footer a {
+    color: var(--brown);
+}
+
+footer a:hover {
+    text-decoration-color: var(--tan);
+}
+
+@media screen and (max-width: 992px) {
+    .card {
+        width: 50%;
+    }
+    header {
+        background: #556A4F ;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
+    header {
+        background: #147600;
+    }
     
 }
