@@ -3,59 +3,96 @@
 
 <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="./Assets/styles.css"> 
-    <title>London</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./Assets/styles.css">
+    <title>London's Portfolio</title>
 </head>
 
 <body>
-<!--Start of header-->
-    <header class="header">
+    <!--Start of header-->
+    <header>
+        <!-- <div class="title"></div> -->
         <h1>London's Portfolio</h1>
-        <p>Hi!</p>
+        <!--Start of navbar-->
+        <nav>
+            <ul>
+                <li>
+                    <a href="#about-me">About Me</a>
+                </li>
+                <li>
+                    <a href="#work">Work</a>
+                </li>
+                <li>
+                    <a href="#contact-me">Contact Me</a>
+                </li>
+                <li>
+                    <a href="#resume">Resume</a>
+                </li>
+            </ul>
+        </nav>
     </header>
-<!--End of header-->
-<!--Start of navbar-->
-    <nav>
-        <ul>
-            <li>
-                <a href="#about-me">About Me</a>
-            </li>
-            <li>
-                <a href="#work">Work</a>
-            </li>
-            <li>
-                <a href="#contact-me">Contact Me</a>
-            </li>
-            <li>
-                <a href="#resume">Resume</a>
-            </li>
-        </ul>
-    </nav>
-<!--End of navbar-->
-    <main class="content">
+    <!--End of navbar and header-->
+    <!-- <div class="card-subheading"></div> -->
+    <div class="hero">
+        <h2>Welcome to my portfolio</h2>
+    </div>
+    <!-- <div> -->
+    <!-- <img class="profile-photo" src="./Assets/me.png" alt="A photo of London"></img> -->
+    <!-- </div> -->
+    <main>
         <section id="about-me" class="about-me">
-            <h2>About Me</h2>
+            <h3>About Me</h3>
+            <img class="profile-photo" src="./Assets/me.png" alt="A photo of London">
             <p>
-                I graduated from San Francisco State University in May of 2022. I got my bachelor's degree in speech,
-                Language, and Hearing Sciences. After graduating I decided I wanted to pursue an education in tech,
-                so I took the Coding Bootcamp at UC Berkeley. I am currently taking this coarse, and I will graduate
+                    I graduated from San Francisco State University in May of 2022. I got my bachelor's degree in Speech,
+                Language, and Hearing Sciences, with my minor in Education. I got my associates degree in Psychology from
+                Clovis Community College in 2019. After graduating I decided I wanted to pursue an education in tech,
+                so I am taking the Coding Bootcamp at UC Berkeley. I will graduate
                 from it in November 2023.
             </p>
         </section>
-        <section id="work" class="work">
-            <h2>Work</h2>
-            <p>
-                Work goes here
-            </p>
-        </section>
-        <section id="contact-me" class="contact-me">
-            <h2>Contact Me</h2>
-            <ul>
-                <li>444.444.4444</li>
-                <li>myemail@yahoo.com</li>
-                <li>GitHub</li>
-                <li>LinkedIn</li>
-            </ul>
-        </section>
+        <div id="work" class="work">
+            <h3>Work</h3>
+            <div class="work-content">
+                <section class="card-1">
+                    <a class="image-parent" href="https://lonj214.github.io/horiseon-refactor/" target="_blank">
+                        <img src="https://i.postimg.cc/tTfVfBF1/Screenshot-2023-06-15-at-11-19-01-AM.png"
+                            alt="A screenshot of my webpage Horiseon" />
+                        <p class="image-title">Horiseon Webpage</p>
+                    </a>
+                </section>
+                <div class="small-projects">
+                    <section class="card-2">
+                        <img src="./Assets/palmtrees.jpg" alt="300x200-image-placeholder" />
+                        <p>300x200 placeholder</p>
+                    </section>
+                    <section class="card-3">
+                        <img src="./Assets/forest.jpg" alt="300x200-image-placeholder" />
+                        <p>300x200 placeholder</p>
+                    </section>
+                </div>
+                <div class="small-projects">
+                    <section class="card-4">
+                        <img src="./Assets/flowers.jpg" alt="300x200-image-placeholder" />
+                        <p>300x200 placeholder</p>
+                    </section>
+                    <section class="card-5">
+                        <img src="./Assets/butterfly.jpg" alt="300x200-image-placeholder" />
+                        <p>300x200 placeholder</p>
+                    </section>
+                </div>
+            </div>
+        </div>
     </main>
+    <footer id="contact-me" class="contact-me">
+        <h3>Contact Me</h3>
+        <ul>
+            <li>209.626.6694</li>
+            <li>londonjensen@yahoo.com</li>
+            <li>
+                <a href="https://github.com/lonj214" target="_blank">GitHub</a>
+            </li>
+            <li>LinkedIn</li>
+        </ul>
+    </footer>
 </body>
